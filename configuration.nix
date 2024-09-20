@@ -7,7 +7,7 @@
   ];
 
   ## Basic settings
-  system.stateVersion = "24.05"; # no need to touch, should be the same as created nixos image
+  system.stateVersion = "24.05"; # no need to touch, should be the same nix channel used on machine on which template was genereated using nixos-generators
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
   nixpkgs.hostPlatform = "x86_64-linux";
