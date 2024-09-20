@@ -43,6 +43,21 @@ nixos-rebuild switch --flake ./#nextcloud
 nextcloud-occ --version
 ```
 
+## Update
+### Major
+```bash
+cd nextcloud-lxc-flake
+vim configuration.nix # change package - e.g. pkgs.nextcloud29 to pkgs.nextcloud30
+nix flake update .
+nixos-rebuild switch --flake ./#nextcloud
+```
+### Minor
+```bash
+cd nextcloud-lxc-flake
+nix flake update .
+nixos-rebuild switch --flake ./#nextcloud
+```
+
 ## Considerations
 * This takes a lot of disk space - almost 5 GB
 * Probably using nixos-generators and configuration.nix file we can generate ready image - with nextcloud installed. And then we create LXC using it.
