@@ -16,7 +16,7 @@ Of course with your desired settings. Example:
 ```bash
 pct create 100 /var/lib/vz/template/cache/nixos-template.tar.xz --hostname nextcloud --memory 2048 --net0 name=eth0,bridge=vmbr0,firewall=0,gw=192.168.10.1,ip=192.168.10.71/24 --storage local --rootfs local:20 --unprivileged 1 --ignore-unpack-errors --ostype nixos --password="$ROOTPASS" --start 1
 ```
-This can be also done from Proxmox Web GUI - "Create CT" button.
+This can be also done from Proxmox Web GUI - "Create CT" button. It will be even easier, because you can then select things from dropdown lists.
 ### Deploy flake on container
 ```bash
 pct enter 100 # or your real CT ID
