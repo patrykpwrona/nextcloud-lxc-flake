@@ -60,4 +60,4 @@ nixos-rebuild switch --flake ./#nextcloud
 
 ## Considerations
 * This takes a lot of disk space - almost 5 GB
-* Probably using nixos-generators and configuration.nix file we can generate ready image - with nextcloud installed. And then we create LXC using it.
+* Probably using nixos-generators and configuration.nix file we can generate ready image - with nextcloud already installed. And then we can create LXC using it. But there is a possibility that in this way, we won't have configuration.nix file inside the container.
