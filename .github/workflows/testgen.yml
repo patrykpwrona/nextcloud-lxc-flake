@@ -19,7 +19,7 @@ jobs:
     timeout-minutes: 30
 
     env:
-      TESTGEN_API_URL: http://localhost:8000
+      TESTGEN_API_URL: https://app.test-gen.pl
       TESTGEN_PROJECT_ID: 6d9e1812-0edc-4a0e-b6cd-280352a3eb9e
       TESTGEN_API_KEY: ${{ secrets.TESTGEN_API_KEY }}
 
